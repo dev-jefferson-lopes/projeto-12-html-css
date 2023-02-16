@@ -1,0 +1,126 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: #80808029;
+    font-family: 'Raleway', sans-serif;
+}
+
+.section-container{
+    width: 100%;
+    max-width: 1024px;
+    margin: 0 auto;
+}
+
+.top{
+    background: #fff;
+}
+
+.section-top{
+    display: flex;
+    align-items: center;
+    height: 55px;
+}
+
+.section-top img{
+    width: 32px;
+    height: 32px;
+}
+
+.section-top p{
+    font-size: 1.5em;
+    color: #5d15d1;
+    margin: 0 0 0 10px;
+}
+
+.section-bg-image{
+    background-image: url("/assets/img/bahia.jpg");
+    height: auto;
+    background-size: cover;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.section-form{
+    background-color: #fff;
+    height: auto;
+    margin: 50px 0;
+}
+
+.section-form-header{
+    background-color: #5d15d1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.section-form-header img{
+    width: 20px;
+    transform: rotate(-45deg);
+}
+
+.section-form-header h1{
+    font-size: 0.9em;
+    font-weight: bold;
+    color: #fff;
+    padding: 10px 5px;
+}
+
+.section-form-main{
+    padding: 25px;
+}
+
+.section-form-main h2{
+    margin: 10px 0;
+}
+
+.section-form-main form{
+    display: flex;
+    flex-direction: column;
+}
+
+.section-form-main form input{
+    margin: 0 0 5px;
+}
+
+.section-form-main label{
+    margin: 8px 0;
+}
+
+.section-form-main form input, .double-field-form select{
+    padding: 5px;
+}
+
+.double-field-form{
+    display: flex;
+    justify-content: space-between;
+}
+
+.double-field-form div{
+    width: 49%;
+    display: flex;
+    flex-direction: column;
+}
+
+.radio{
+    display: flex;
+}
+
+.radio div{
+    margin-right: 40px;
+}
+
+.section-form-main button{
+    margin-top: 30px;
+    background-color: #5d15d1;
+    color: #fff;
+    border: none;
+    width: 180px;
+    height: 30px;
+    font-weight: bold;
+}
+

@@ -6,25 +6,28 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="description" content="A Agência de Viagens encontra o hotel certo para você!">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Raleway:wght@200;300&amp;display=swap">
+    <link rel="stylesheet" href="assets/css/style.css">
+
     <title>Agência de viagens</title>
 </head>
 
 <body>
-    <header>
-        <div>
+    <header class="top">
+        <div class="section-container section-top">
             <img src="assets/img/local-logo.png" alt="local logo">
             <p>Agência de Viagens</p>
         </div>
     </header>
 
     <main>
-        <section>
-            <div>
-                <div>
+        <section class="section-bg-image">
+            <div class="section-container section-form">
+                <div class="section-form-header">
                     <img src="assets/img/aviao.png" alt="icone de avião">
                     <h1>Solicite um orçamento</h1>
                 </div>
-                <div>
+                <div class="section-form-main">
                     <h2>Informe seus dados</h2>
                     <form action="">
                         <label for="nome">Nome</label>
@@ -38,7 +41,7 @@
                             placeholder="(xx) xxxxx-xxxx" required>
 
 
-                        <div>
+                        <div class="double-field-form">
                             <div>
                                 <label for="ida">Data de ida</label>
                                 <input type="date" id="ida" name="partida" required>
@@ -48,7 +51,7 @@
                                 <input type="date" id="volta" name="chegada" required>
                             </div>
                         </div>
-                        <div>
+                        <div class="double-field-form">
                             <div>
                                 <label for="origem">Origem</label>
                                 <select name="origem" id="origem">
@@ -78,7 +81,7 @@
                         </div>
 
                         <label>Quarto com cama Infantil?</label>
-                        <div>
+                        <div  class="radio">
                             <div>
                                 <input type="radio" id="infantil-sim" name="infantil" value="s">
                                 <label for="infantil-sim">Sim</label>
@@ -89,7 +92,7 @@
                             </div>
                         </div>
                         <label>Preferências de hospedagem</label>
-                        <div>
+                        <div  class="radio">
                             <div>
                                 <input type="checkbox" id="piscina" name="preferencias[]" value="piscina">
                                 <label for="piscina">Piscina</label>
