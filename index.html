@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,7 +8,111 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Agência de viagens</title>
 </head>
+
 <body>
-    
+    <header>
+        <div>
+            <img src="assets/img/local-logo.png" alt="local logo">
+            <p>Agência de Viagens</p>
+        </div>
+    </header>
+
+    <main>
+        <section>
+            <div>
+                <div>
+                    <img src="assets/img/aviao.png" alt="icone de avião">
+                    <h1>Solicite um orçamento</h1>
+                </div>
+                <div>
+                    <h2>Informe seus dados</h2>
+                    <form action="">
+                        <label for="nome">Nome</label>
+                        <input type="text" id="nome" name="nome" placeholder="Nome completo" required>
+
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" placeholder="Email para contato" required>
+
+                        <label for="celular">Celular</label>
+                        <input type="tel" id="celular" pattern="\([0-9]{2}\) [0-9]{5}-[0-9]{4}" name="celular"
+                            placeholder="(xx) xxxxx-xxxx" required>
+
+
+                        <div>
+                            <div>
+                                <label for="ida">Data de ida</label>
+                                <input type="date" id="ida" name="partida" required>
+                            </div>
+                            <div>
+                                <label for="volta">Data de volta</label>
+                                <input type="date" id="volta" name="chegada" required>
+                            </div>
+                        </div>
+                        <div>
+                            <div>
+                                <label for="origem">Origem</label>
+                                <select name="origem" id="origem">
+                                    <option selected>Partindo de</option>
+                                    <option value="pvh">Porto Velho</option>
+                                    <option value="cacoal">Cacoal</option>
+                                    <option value="AM">Amazonas</option>
+                                    <option value="RJ">Rio de Janeiro</option>
+                                    <option value="SP">São Paulo</option>
+                                    <option value="GO">Goias</option>
+                                    <option value="MA">Maranhão</option>
+                                </select>
+                            </div>
+                            <div>
+                                <label for="destino">Destino</label>
+                                <select name="destino" id="destino">
+                                    <option selected>Indo para</option>
+                                    <option value="pvh">Porto Velho</option>
+                                    <option value="cacoal">Cacoal</option>
+                                    <option value="AM">Amazonas</option>
+                                    <option value="RJ">Rio de Janeiro</option>
+                                    <option value="SP">São Paulo</option>
+                                    <option value="GO">Goias</option>
+                                    <option value="MA">Maranhão</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <label>Quarto com cama Infantil?</label>
+                        <div>
+                            <div>
+                                <input type="radio" id="infantil-sim" name="infantil" value="s">
+                                <label for="infantil-sim">Sim</label>
+                            </div>
+                            <div>
+                                <input type="radio" id="infantil-nao" name="infantil" value="nao">
+                                <label for="infantil-nao">Não</label>
+                            </div>
+                        </div>
+                        <label>Preferências de hospedagem</label>
+                        <div>
+                            <div>
+                                <input type="checkbox" id="piscina" name="preferencias[]" value="piscina">
+                                <label for="piscina">Piscina</label>
+                            </div>
+                            <div>
+                                <input type="checkbox" id="wifi" name="preferencias[]" value="wifi">
+                                <label for="wifi">Wi-Fi</label>
+                            </div>
+                            <div>
+                                <input type="checkbox" id="garagem" name="preferencias[]" value="garagem">
+                                <label for="garagem">Garagem</label>
+                            </div>
+                            <div>
+                                <input id="suite" type="checkbox" name="preferencias[]" value="suite">
+                                <label for="suite">Suite</label>
+                            </div>
+                        </div>
+                        <button type="submit">Solicitar orçamento</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
 </body>
+
 </html>
