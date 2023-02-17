@@ -129,18 +129,18 @@ body {
 
 .section-sales {}
 
-.sales-title {
+.sales-title, .nature-title {
     font-size: 1.5em;
     margin: 30px 0 10px;
 }
 
-.sales-description {
+.sales-description, .nature-description {
     font-size: 1em;
     font-weight: normal;
     margin: 0 0 20px;
 }
 
-.sales-image {
+.sales-image{
     width: 100%;
     height: 375px;
     display: flex;
@@ -183,11 +183,47 @@ body {
     box-sizing: border-box;
 }
 
-
-
 .sales-image-detach img,
 .sales-four-image img {
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
+
+/*  */
+
+.nature-cards{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.nature-cards figure{
+    width: calc(50% - 10px);
+    height: 100%;
+}
+
+.nature-cards figure div{
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    background: #fff;
+}
+
+.nature-cards figure div h3{
+    font-size: 1em;
+
+}
+.nature-cards figure div p{
+    color: grey;
+    font-size: 0.85em;
+    margin: 15px 0 0 0px;
+}
+
+.nature-cards img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
