@@ -9,7 +9,7 @@ body {
 }
 
 .section-container {
-    width: 100%;
+    width: 95%;
     max-width: 1024px;
     margin: 0 auto;
 }
@@ -125,10 +125,6 @@ body {
     font-weight: bold;
 }
 
-/*  */
-
-.section-sales {}
-
 .sales-title,
 .nature-title {
     font-size: 1.5em;
@@ -162,7 +158,6 @@ body {
     flex-wrap: wrap;
     flex-direction: column;
     justify-content: space-between;
-
 }
 
 .sales-four-image figure {
@@ -192,8 +187,6 @@ body {
     object-fit: cover;
 }
 
-/*  */
-
 .nature-cards {
     width: 100%;
     height: auto;
@@ -215,7 +208,6 @@ body {
 
 .nature-cards figure div h3 {
     font-size: 1em;
-
 }
 
 .nature-cards figure div p {
@@ -229,8 +221,6 @@ body {
     height: 100%;
     object-fit: cover;
 }
-
-/*  */
 
 footer {
     background-color: #5d15d1;
@@ -261,4 +251,54 @@ footer {
 .section-footer-content div div {
     display: flex;
     align-items: center;
+}
+
+
+@media (max-width: 768px) {
+    .radio:last-of-type {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .sales-image {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .sales-image-detach {
+        position: relative;
+        width: calc(100% - 10px);
+        height: 100%;
+    }
+
+    .sales-four-image {
+        width: calc(100% - 10px);
+        height: 300px;
+        margin: 20px 0;
+    }
+}
+
+@media (max-width: 620px) {
+    .nature-cards {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nature-cards figure {
+        width: calc(100% - 20px);
+        height: 100%;
+    }
+
+    .nature-cards figure div {
+        margin-bottom: 20px;
+    }
+    
+    .section-footer-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .section-footer-content>div {
+        margin: 30px;
+    }
 }
